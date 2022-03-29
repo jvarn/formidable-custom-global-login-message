@@ -3,7 +3,7 @@
 Plugin Name: Formidable Forms Login Message
 Plugin URI: https://github.com/jvarn/formidable-custom-global-login-message
 Description: Changes Global Login Message to include a login link
-Version: 1.0.1
+Version: 1.1.0
 Author: Jeremy Varnham
 Author URI: https://abuyasmeen.com/
 */
