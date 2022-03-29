@@ -6,7 +6,7 @@ It changes the  global login message, which is displayed to logged out users whe
 The reason for using a function to modify this value rather than inserting a hyperlink directly into the settings is in order for the login link to include a redirect back to the user's pre-login location.
 
 v1.0.0
-A comment under source 2 below gave a good tip to replace get_permalink with some alternative code in order to keep any query vars in the URL. This is especially useful if the Formidable Form is inserted within a the detail page of a Formidable View for example in the format `/PageWithView/ViewDetail/ID` this might be `/Staff/StaffDetail/25`. Get Permalink would give us `/Staff` but omit the rest, whereas the suggested code, included in this plugin, will maintain the entire link.
+A comment under source 2 below gave a good tip to replace get_permalink with some alternative code in order to keep any query vars in the URL. This is especially useful if the Formidable Form is inserted within the detail page of a Formidable View – for example in the format `/PageWithView/ViewDetail/ID` this might be `/Staff/StaffDetail/25`. Get Permalink would give us `/Staff` but omit the rest, whereas the suggested code, included in this plugin, will maintain the entire link.
 
 v1.1.0
 Now instead of replacing the entire string with a hard-coded value, it will add the link to the string specified in the settings. It will search for a word between two asterisks, e.g. `You do not have permission to view this form, please *log in* to continue.` and apply the link the that word.
