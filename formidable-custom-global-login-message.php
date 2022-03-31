@@ -39,17 +39,15 @@ function jlv_ff_change_global_login_message( $message ) {
 			
 			$current_url = home_url( add_query_arg( [], $GLOBALS['wp']->request ) ); // get_permalink() doesn't include query vars
 			
-			$message = $frm_login_msg_array[0];
-		    $message .= '<a href="' . esc_url( wp_login_url( $current_url ) ) . '" alt="' . esc_attr__( 'Login', 'Wordpress' ) . '">';
-			$message .= $frm_login_msg_array[1];
-			$message .= '</a>';
-			$message .= $frm_login_msg_array[2];
+			$frm_login_msg = $frm_login_msg_array[0];
+		        $frm_login_msg .= '<a href="' . esc_url( wp_login_url( $current_url ) ) . '" alt="' . esc_attr__( 'Login', 'Wordpress' ) . '">';
+			$frm_login_msg .= $frm_login_msg_array[1];
+			$frm_login_msg .= '</a>';
+			$frm_login_msg .= $frm_login_msg_array[2];
 			
-		    return $message;
-	    } else {
-		    return $frm_login_msg;
-	    }
-	    
+	        }
+		
+	return $frm_login_msg;
     }
 }
 add_filter( 'frm_global_login_msg', 'jlv_ff_change_global_login_message' );
