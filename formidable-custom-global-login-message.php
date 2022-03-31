@@ -3,7 +3,7 @@
 Plugin Name: Formidable Forms Login Link with Redirect in Login Message 
 Plugin URI: https://github.com/jvarn/formidable-custom-global-login-message
 Description: Changes Global Login Message to include a login link that redirects user back to pre-login location
-Version: 1.1.1
+Version: 1.1.2
 Author: Jeremy Varnham
 Author URI: https://abuyasmeen.com/
 */
